@@ -1,0 +1,142 @@
+@import 'config';
+
+body {
+  margin: 0;
+  font: $body-font;
+}
+
+nav {
+  a {
+    color: $icon-color;
+    text-decoration: none;
+  }
+  a:hover {
+    color: inherit;
+  }
+}
+
+@mixin display-flex {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+}
+
+@mixin topnav-icon-pos($pos) {
+  margin: 1%;
+  position: absolute;
+  right: $pos;
+}
+
+#top-nav {
+  background-color: $topnav-color;
+  z-index: 1;
+  width: 100%;
+  @include display-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  a {
+    text-decoration: none;
+    font-size: 6vmin;
+  }
+  #login-icon {
+    @include topnav-icon-pos(5%);
+  }
+  #message-icon {
+    @include topnav-icon-pos(15%);
+  }
+  #notification-icon {
+    @include topnav-icon-pos(25%);
+  }
+  #search-icon {
+    @include topnav-icon-pos(35%);
+  }
+}
+
+@mixin slide-down {
+  background-color: #95a586;
+  width: 100%;
+  display: none;
+}
+
+@mixin slide-pos($pos) {
+  position: relative;
+  vertical-align: middle;
+  left: $pos;
+}
+
+#login-slide-down {
+  @include slide-down;
+  a {
+    color: white;
+    text-decoration: none;
+    /*font-size: 6vmin;*/
+    float: left;
+    @include slide-pos(10%);
+  }
+  input {
+    @include slide-pos(15%);
+  }
+  input:not(:last-child) {
+    width: 30%;
+  }
+}
+
+#search-slide-down {
+  @include slide-down;
+  input {
+    @include slide-pos(15%);
+  }
+  input:not(:last-child) {
+    width: 60%;
+    // margin: auto;
+  }
+}
+
+#message-slide-down {
+  @include slide-down;
+  textarea {
+    @include slide-pos(2%);
+    width: 47%;
+  }
+}
+
+@mixin justify-content($flex) {
+  justify-content: $flex;
+  -webkit-justify-content: $flex;
+  -moz-justify-content: $flex;
+}
+
+#bottom-side-nav {
+  background-color: $bottom-sidenav-color;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  @include display-flex;
+  @include justify-content(space-around);
+  a {
+    font-size: 5vmin;
+    margin: 1% 0;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width:700px) {
+  #bottom-side-nav {
+    max-width: 7%;
+    height: 100%;
+    z-index: -1;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    @include justify-content(flex-start);
+    align-items: center;
+    a {
+      font-size: 6vmin;
+      position: relative;
+      top: 20%;
+      margin: 10% 0;
+    }
+  }
+}
