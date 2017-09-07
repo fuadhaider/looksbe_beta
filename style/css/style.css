@@ -2,13 +2,7 @@ body {
   margin: 0;
   font: 4vmin arial; }
 
-nav a {
-  color: white;
-  text-decoration: none; }
-nav a:hover {
-  color: inherit; }
-
-#top-nav {
+nav {
   background-color: #95a586;
   z-index: 1;
   width: 100%;
@@ -18,22 +12,28 @@ nav a:hover {
   align-items: center;
   -webkit-align-items: center;
   -moz-align-items: center; }
-  #top-nav a {
+  nav a {
+    color: white;
     text-decoration: none;
     font-size: 6vmin; }
-  #top-nav #login-icon {
+  nav a:hover {
+    color: inherit; }
+  nav #logo {
+    position: absolute;
+    left: 5%; }
+  nav #login-icon {
     margin: 1%;
     position: absolute;
     right: 5%; }
-  #top-nav #message-icon {
+  nav #message-icon {
     margin: 1%;
     position: absolute;
     right: 15%; }
-  #top-nav #notification-icon {
+  nav #notification-icon {
     margin: 1%;
     position: absolute;
     right: 25%; }
-  #top-nav #search-icon {
+  nav #search-icon {
     margin: 1%;
     position: absolute;
     right: 35%; }
