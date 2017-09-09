@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  font: $body-font;
+  // font: $body-font;
 }
 
 .flex-container {
@@ -11,6 +11,7 @@ body {
   -webkit-flex-flow: row wrap;
   -moz-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
+
 }
 
 .flex-container > * {
@@ -26,9 +27,16 @@ body {
 header {
   background: $header-color;
   flex: 1 100%;
+  @include display-flex;
+  align-items: center;
+  -webkit-items-content: center;
   a {
     text-decoration: none;
     color: $icon-color;
+    font-size: 4vmin;
+  }
+  a:first-child {
+    margin-right: auto;
   }
 }
 

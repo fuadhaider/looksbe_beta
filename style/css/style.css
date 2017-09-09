@@ -1,6 +1,5 @@
 body {
-  margin: 0;
-  font: 4vmin arial; }
+  margin: 0; }
 
 .flex-container {
   display: flex;
@@ -20,10 +19,18 @@ body {
 
 header {
   background: #95a586;
-  flex: 1 100%; }
+  flex: 1 100%;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  align-items: center;
+  -webkit-items-content: center; }
   header a {
     text-decoration: none;
-    color: white; }
+    color: white;
+    font-size: 4vmin; }
+  header a:first-child {
+    margin-right: auto; }
 
 .footer {
   background: lightgreen; }
