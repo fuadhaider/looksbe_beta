@@ -1,6 +1,5 @@
 body {
-  margin: 0;
-  font: 4vmin arial; }
+  margin: 0; }
 
 .flex-container {
   display: flex;
@@ -29,6 +28,10 @@ header {
   header a {
     text-decoration: none;
     color: white;
+    font-size: 4vmin; }
+  header #login-div a {
+    font-size: 4vmin; }
+  header #notification-icon {
     font-size: 4vmin; }
   header a:first-child {
     margin-right: auto; }
