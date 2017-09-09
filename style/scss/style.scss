@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  // font: $body-font;
+  font: $body-font;
 }
 
 .flex-container {
@@ -20,7 +20,6 @@ body {
 }
 
 .main {
-    // text-align: left;
     background: cornflowerblue;
 }
 
@@ -35,12 +34,8 @@ header {
     color: $icon-color;
     font-size: 4vmin;
   }
-  #login-div {
-    a {
-      font-size: 4vmin;
-    }
-  }
-  #notification-icon {
+
+  #search-icon, #message-icon, #notification-icon, #login-icon {
     font-size: 4vmin;
 
   }
