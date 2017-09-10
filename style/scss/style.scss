@@ -7,11 +7,10 @@ body {
 
 .flex-container {
   @include display-flex;
-  flex-flow: row wrap;
+  flex-flow: row;
   -webkit-flex-flow: row wrap;
   -moz-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
-
 }
 
 .flex-container > * {
@@ -19,13 +18,14 @@ body {
     flex: 1 100%;
 }
 
-.main {
-    background: cornflowerblue;
+main {
+    background-color: white;
+    flex: 1 100%;
 }
 
 header {
   background: $header-color;
-  flex: 1 100%;
+  // flex: 1 100%;
   @include display-flex;
   align-items: center;
   -webkit-items-content: center;
@@ -42,18 +42,32 @@ header {
   }
 }
 
-.footer {background: lightgreen;}
-.aside1 {background: moccasin;}
-.aside2 {background: violet;}
+// .footer {background: lightgreen;}
+nav {
+  background: $nav-color;
+}
+
+aside {
+  background: $aside-color;
+}
 
 @media all and (min-width: 600px) {
-    .aside { flex: 1 0px; }
+  nav, aside {
+    flex: 1 0px;
+  }
 }
 
 @media all and (min-width: 800px) {
-    .main    { flex: 3 0px; }
-    .aside1 { order: 1; }
-    .main    { order: 2; }
-    .aside2 { order: 3; }
-    .footer  { order: 4; }
+  nav {
+    order: 1;
+  }
+  main {
+    flex: 3 0px;
+    order: 2;
+  }
+  // .main    { order: 2; }
+  aside {
+    order: 3;
+  }
+  // .footer  { order: 4; }
 }

@@ -1,11 +1,14 @@
 $body-font: 4vmin arial; //4/100th of the smallest side
 $icon-color: white;
 $header-color: #95a586;
-$footer-aside-color: #6693c1;
+$nav-color: #6693c1;
+$aside-color: #c99d9d;
 
 @mixin display-flex {
   display: flex;
   display: -webkit-flex;
   display: -moz-flex;
-  // display: -ms-flex;
+  // display: -webkit-box;
+  // display: -moz-box;
+  // display: -ms-flexbox;
 }
