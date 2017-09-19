@@ -8,7 +8,7 @@ body {
 .flex-container {
   @include display-flex;
   @include flex-flow(column);
-  height: 100vh;
+  height: 100vh;  //100% vewport height
 }
 
 header {
@@ -16,11 +16,12 @@ header {
   @include display-flex;
   align-items: center;
   -webkit-items-content: center;
+  padding: 0 2vh;
   a {
     text-decoration: none;
     color: $icon-color;
     font-size: $menu-font-size;
-    padding: 3px;
+    margin: 0 0.5vh;
   }
   #search-icon, #message-icon, #notification-icon, #login-icon {
     font-size: $menu-font-size;
@@ -58,9 +59,6 @@ section {
 }
 
 @media all and (min-width: 600px) {
-  header {
-    padding: 5px;
-  }
   section {
     @include display-flex;
     @include flex-flow(row);
@@ -69,9 +67,6 @@ section {
       @include display-flex;
       @include flex-flow(column);
       justify-content: flex-start;
-      a {
-        padding: 5px;
-      }
     }
     main {
       order: 2;
