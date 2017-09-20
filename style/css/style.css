@@ -11,7 +11,7 @@ body {
   -moz-flex-flow: column;
   height: 100vh; }
 
-header {
+header#flex-header {
   background: #95a586;
   display: flex;
   display: -webkit-flex;
@@ -19,17 +19,17 @@ header {
   align-items: center;
   -webkit-items-content: center;
   padding: 0 1vh; }
-  header a {
+  header#flex-header a {
     text-decoration: none;
     color: white;
     font-size: 4.5vh;
     margin: 0 0.5vh; }
-  header #search-icon, header #message-icon, header #notification-icon, header #login-icon {
+  header#flex-header #search-icon, header#flex-header #message-icon, header#flex-header #notification-icon, header#flex-header #login-icon {
     font-size: 4.5vh; }
-  header a:first-child {
+  header#flex-header a:first-child {
     margin-right: auto; }
 
-section {
+section#flex-section {
   display: flex;
   display: -webkit-flex;
   display: -moz-flex;
@@ -37,34 +37,34 @@ section {
   -webkit-flex-flow: column;
   -moz-flex-flow: column;
   flex: auto; }
-  section main {
+  section#flex-section main#flex-main {
     background: whitesmoke;
     flex: auto; }
-  section aside {
+  section#flex-section aside#flex-aside {
     background: #c99d9d; }
-  section nav {
+  section#flex-section nav#flex-nav {
     background: #6693c1;
     display: flex;
     display: -webkit-flex;
     display: -moz-flex;
     justify-content: space-around; }
-    section nav a {
+    section#flex-section nav#flex-nav a {
       text-decoration: none;
       color: white;
       font-size: 4.5vh;
       padding: 3px; }
-    section nav #home-icon, section nav #trend-icon, section nav #explore-icon, section nav #shop-icon, section nav #more-icon {
+    section#flex-section nav#flex-nav #home-icon, section#flex-section nav#flex-nav #trend-icon, section#flex-section nav#flex-nav #explore-icon, section#flex-section nav#flex-nav #shop-icon, section#flex-section nav#flex-nav #more-icon {
       font-size: 4.5vh; }
 
 @media all and (min-width: 600px) {
-  section {
+  section#flex-section {
     display: flex;
     display: -webkit-flex;
     display: -moz-flex;
     flex-flow: row;
     -webkit-flex-flow: row;
     -moz-flex-flow: row; }
-    section nav {
+    section#flex-section nav#flex-nav {
       order: 1;
       display: flex;
       display: -webkit-flex;
@@ -73,9 +73,9 @@ section {
       -webkit-flex-flow: column;
       -moz-flex-flow: column;
       justify-content: flex-start; }
-    section main {
+    section#flex-section main#flex-main {
       order: 2; }
-    section aside {
+    section#flex-section aside#flex-aside {
       order: 3; } }
 
 /*# sourceMappingURL=style.css.map */
