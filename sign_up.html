@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sign Up</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Fuad Haider">
+  <link rel="stylesheet" href="style/css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="flex-container">
+    <header id="flex-header">
+      <a href="#about">looksbe</a>
+      <a href="#search" id="search-icon" class="material-icons" data-toggle="tooltip"
+        data-placement="auto" title="Search">&#xe8b6;</a>
+      <a href="#message" id="message-icon" class="material-icons" data-toggle="tooltip"
+        data-placement="auto" title="Message">&#xe0ca;</a>
+      <a href="#notification" id="notification-icon" class="material-icons" data-toggle="tooltip"
+        data-placement="auto" title="Notification">notifications</a>
+      <a href="#login" id="login-icon" class="material-icons" data-toggle="tooltip"
+        data-placement="auto" title="Login">&#xe7fd;</a>
+    </header>
+    <section id="flex-section">
+      <main id="flex-main">
+        <div class="container">
+          <h2>Sign Up</h2>
+          <p>Please enter your details below</p>
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <button type="button" class="btn btn-block"
+                href="#account-detail" data-toggle="collapse"
+                data-parent="#accordion">Account Detail</button>
+              <div class="panel-collapse collapse in" id="account-detail">
+                <div class="panel-body">
+                  <form action="#" method="post">
+                    <div class="form-group">
+                      <label for="email" class="sr-only">Enter Email Address:</label>
+                      <input type="email" class="form-control"
+                        placeholder="Enter Email" name="" value="">
+                    </div>
+                    <div class="form-inline">
+                      <div class="form-group">
+                        <div class="col-sm-6">
+                          <label for="pwd" class="sr-only">Create Password:</label>
+                          <input type="password" class="form-control"
+                            placeholder="Create Password" name="" value="">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-6">
+                          <label for="pwd" class="sr-only">Confirm Password:</label>
+                          <input type="password" class="form-control"
+                            placeholder="Confirm Password" name="" value="">
+                        </div>
+
+                      </div>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <button type="button" class="btn btn-block"
+                href="#personal-detail" data-toggle="collapse"
+                data-parent="#accordion">Personal Detail</button>
+              <div class="panel-collapse collapse" id="personal-detail">
+                <div class="panel-body">
+
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <button type="button" class="btn btn-block"
+                href="#contact-detail" data-toggle="collapse"
+                data-parent="#accordion">Contact Detail</button>
+              <div class="panel-collapse collapse" id="contact-detail">
+                <div class="panel-body">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="container">
+          <h2>Sign Up</h2>
+          <p>Please enter your email, create and confirm password, then submit</p>
+          <form class="form-inline" action="">
+            <div class="form-group">
+              <input type="email" class="form-control" id="email"
+              placeholder="Enter email" name="email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="pwd"
+              placeholder="Enter password" name="pwd">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="pwd"
+              placeholder="Confirm password" name="pwd">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="remember"> Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="reset" class="btn btn-default">Reset</button>
+          </form>
+        </div> -->
+      </main>
+      <aside id="flex-aside">banner ad</aside>
+      <nav id="flex-nav">
+        <a href="#home" id="home-icon" class="material-icons" data-toggle="tooltip"
+          data-placement="auto" title="Home">home</a>
+        <a href="#trend" id="trend-icon" class="material-icons" data-toggle="tooltip"
+          data-placement="auto" title="Trend">&#xe8e5;</a>
+        <a href="#explore" id="explore-icon" class="material-icons" data-toggle="tooltip"
+          data-placement="auto" title="Explore">&#xe87a;</a>
+        <a href="#shop" id="shop-icon" class="material-icons" data-toggle="tooltip"
+          data-placement="auto" title="Shop">&#xe8cc;</a>
+        <a href="#more" id="more-icon" class="material-icons" data-toggle="tooltip"
+          data-placement="auto" title="More">&#xe5d3;</a>
+      </nav>
+    </section>
+  </div>
+</body>
+</html>
