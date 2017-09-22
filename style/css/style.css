@@ -56,7 +56,11 @@ section#flex-section {
     section#flex-section nav#flex-nav #home-icon, section#flex-section nav#flex-nav #trend-icon, section#flex-section nav#flex-nav #explore-icon, section#flex-section nav#flex-nav #shop-icon, section#flex-section nav#flex-nav #more-icon {
       font-size: 4.5vh; }
 
-@media all and (min-width: 600px) {
+.container {
+  text-align: center;
+  color: darkslategrey; }
+
+@media all and (min-width: 769px) {
   section#flex-section {
     display: flex;
     display: -webkit-flex;

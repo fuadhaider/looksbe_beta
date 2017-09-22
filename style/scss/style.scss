@@ -58,7 +58,12 @@ section#flex-section {
   }
 }
 
-@media all and (min-width: 600px) {
+.container {
+  text-align: center;
+  color: $body-font-colour;
+}
+
+@media all and (min-width: 769px) {
   section#flex-section {
     @include display-flex;
     @include flex-flow(row);
