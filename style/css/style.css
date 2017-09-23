@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  font: 3vmin arial; }
+  font: 3vmin arial;
+  color: darkslategrey; }
 
 .flex-container {
   display: flex;
