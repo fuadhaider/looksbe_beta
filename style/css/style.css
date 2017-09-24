@@ -61,9 +61,6 @@ section#flex-section {
   text-align: center;
   color: darkslategrey; }
 
-input[type="date"]::before {
-  content: attr(placeholder); }
-
 @media all and (min-width: 769px) {
   section#flex-section {
     display: flex;

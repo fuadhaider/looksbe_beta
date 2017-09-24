@@ -103,21 +103,35 @@
                       </div>
                     </div>
                     <div class="col-sm-12">
-                      <div class="form-inline">
-                        <div class="form-group">
-                          <label for="dob">Date of Birth</label>
-                          <input type="number" class="form-control"
-                          placeholder="Date" name="date"
-                          min="1" max="31">
-                        </div>
-                        <div class="form-group">
-                          <label for="dob">Date of Birth</label>
-                          <input type="number" class="form-control"
-                          placeholder="Date" name="date"
-                          min="1" max="31">
+                      <div class="form-group">
+                        <div class="form-inline">
+                          <label for="date">Date of Birth</label>
+                          <input type="date" class="form-control"
+                          placeholder="dd/mm/yyyy" name="dob">
                         </div>
                       </div>
-
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <div class="form-inline">
+                          <label for="gender">Gender</label>
+                          <select class="form-control" id="gender">
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-inline">
+                      <div class="form-group">
+                        <button type="submit" name="submit"
+                        class="btn btn-default">Submit</button>
+                      </div>
+                      <div class="form-group">
+                        <button type="reset" name="reset"
+                        class="btn btn-default">Reset</button>
+                      </div>
                     </div>
                   </form>
                 </div>

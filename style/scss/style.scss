@@ -64,9 +64,9 @@ section#flex-section {
   color: $body-font-colour;
 }
 
-input[type="date"]::before {
-  content: attr(placeholder);
-}
+// input[type="date"]::before {
+//   content: attr(placeholder);
+// }
 
 @media all and (min-width: 769px) {
   section#flex-section {
