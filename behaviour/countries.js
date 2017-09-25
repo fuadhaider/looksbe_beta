@@ -261,17 +261,17 @@ s_a[252]="Bulawayo|Harare|ManicalandMashonaland Central|Mashonaland East|Mashona
 
 
 function populateStates( countryElementId, stateElementId ){
-	
+
 	var selectedCountryIndex = document.getElementById( countryElementId ).selectedIndex;
 
 	var stateElement = document.getElementById( stateElementId );
-	
+
 	stateElement.length=0;	// Fixed by Julian Woods
 	stateElement.options[0] = new Option('Select State','');
 	stateElement.selectedIndex = 0;
-	
+
 	var state_arr = s_a[selectedCountryIndex].split("|");
-	
+
 	for (var i=0; i<state_arr.length; i++) {
 		stateElement.options[stateElement.length] = new Option(state_arr[i],state_arr[i]);
 	}
