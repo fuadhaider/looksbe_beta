@@ -142,7 +142,7 @@
                 <div class="panel-body">
                   <form action="#" method="post">
                     <fieldset>
-                      <legend>Address</legend>
+                      <legend style="font-size:2.5vh">Address</legend>
                       <div class="col-sm-6">
                         <div class="form-group">
                           <label for="unit" class="sr-only">Unit</label>
@@ -171,13 +171,6 @@
                           class="form-control" placeholder="Street Name">
                         </div>
                       </div>
-                      <!-- <div class="col-sm-6">
-                        <div class="form-group">
-                          <label for="neighbourhood" class="sr-only">Neighbourhood</label>
-                          <input type="text" name="neighbourhood" id="neighbourhood"
-                          class="form-control" placeholder="Neighbourhood">
-                        </div>
-                      </div> -->
                       <div class="col-sm-6">
                         <div class="form-group">
                           <label for="city-town" class="sr-only">City/Town</label>
@@ -199,12 +192,14 @@
                       </div>
                       <div class="col-sm-6">
                         <div class="form-group">
-                          <select id="state" class="form-control" name="state"></select>
+                          <select id="state" class="form-control" name="state">
+                            <option>..then State</option>
+                          </select>
                         </div>
                       </div>
                     </fieldset>
                     <fieldset>
-                      <legend>Phone</legend>
+                      <legend style="font-size:2.5vh">Phone</legend>
                       <div class="col-sm-6">
                         <div class="form-group">
                           <label for="mobile" class="sr-only">Mobile</label>
@@ -252,8 +247,6 @@
       </nav>
     </section>
   </div>
-
-  <!-- <script src="behaviour/script.js"></script> -->
   <script
     src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
   </script>
@@ -261,8 +254,6 @@
     src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
   </script>
   <script src="behaviour/countries.js"></script>
-  <script>
-    populateCountries("country", "state");
-  </script>
+  <script src="behaviour/script.js"></script>
 </body>
 </html>

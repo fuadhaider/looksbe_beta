@@ -20,3 +20,6 @@ $(document).click(function() {
 $('#login-icon, #login-slide-down, #search-icon, #search-slide-down, #message-icon, #message-slide-down').click(function(event) {
         event.stopPropagation();
 });
+
+//Loading list of countries and states in address forms
+populateCountries("country", "state");
