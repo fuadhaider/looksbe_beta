@@ -10,10 +10,14 @@
     rel="stylesheet">
   <link rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="plugins/bootstrap-formhelpers-countries.flags.css"> -->
   <script
     src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script
     src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- <script
+    src="plugins/winmarkltd-BootstrapFormHelpers-d4201db/js/bootstrap-formhelpers-countries.js">
+  </script> -->
 </head>
 <body>
   <div class="flex-container">
@@ -36,37 +40,37 @@
           <div class="panel-group col-sm-8 col-sm-offset-2" id="accordion">
             <div class="panel panel-default">
               <button type="button" class="btn btn-block"
-                href="#account-detail" data-toggle="collapse"
-                data-parent="#accordion">Account Detail</button>
-              <div class="panel-collapse collapse in" id="account-detail">
+                href="#account" data-toggle="collapse"
+                data-parent="#accordion">Account</button>
+              <div class="panel-collapse collapse in" id="account">
                 <div class="panel-body">
                   <form action="#" method="post">
                     <div class="col-sm-12">
                       <div class="form-group">
                         <label for="email" class="sr-only">Enter Email Address:</label>
-                        <input type="email" class="form-control"
-                          placeholder="Enter Email" name="" value="">
+                        <input type="email" id="email" class="form-control"
+                          placeholder="Enter Email" required>
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="form-group">
-                        <label for="pwd" class="sr-only">Create Password:</label>
-                        <input type="password" class="form-control"
-                          placeholder="Create Password" name="" value="">
+                        <label for="create-password" class="sr-only">Create Password:</label>
+                        <input type="password" id="create-password" class="form-control"
+                          placeholder="Create Password" required>
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="form-group">
-                        <label for="pwd"
+                        <label for="confirm-password"
                         class="sr-only">Confirm Password:</label>
-                        <input type="password" class="form-control"
-                          placeholder="Confirm Password" name="" value="">
+                        <input type="password" id="confirm-password" class="form-control"
+                          placeholder="Confirm Password" required>
                       </div>
                     </div>
                     <div class="form-inline">
                       <div class="form-group">
                         <label><input type="checkbox"
-                          name="" value=""> Remember Me</label>
+                          name="rememberme"> Remember Me</label>
                       </div>
                       <div class="form-group">
                         <button type="submit" name="submit"
@@ -83,30 +87,30 @@
             </div>
             <div class="panel panel-default">
               <button type="button" class="btn btn-block"
-                href="#personal-detail" data-toggle="collapse"
-                data-parent="#accordion">Personal Detail</button>
-              <div class="panel-collapse collapse" id="personal-detail">
+                href="#personal" data-toggle="collapse"
+                data-parent="#accordion">Personal</button>
+              <div class="panel-collapse collapse" id="personal">
                 <div class="panel-body">
                   <form action="#" method="post">
                     <div class="col-sm-6">
                       <div class="form-group">
-                        <label for="firstname" class="sr-only">First Name</label>
-                        <input type="text" class="form-control"
-                        placeholder="First Name" name="" value="">
+                        <label for="first-name" class="sr-only">First Name</label>
+                        <input type="text" id="first-name" class="form-control"
+                        placeholder="First Name" name="firstname">
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="form-group">
-                        <label for="lastname" class="sr-only">Last Name</label>
-                        <input type="text" class="form-control"
-                        placeholder="Last Name" name="" value="">
+                        <label for="last-name" class="sr-only">Last Name</label>
+                        <input type="text" id="last-name" class="form-control"
+                        placeholder="Last Name" name="firstname">
                       </div>
                     </div>
                     <div class="col-sm-7">
                       <div class="form-group">
                         <div class="form-inline">
-                          <label for="date">Date of Birth</label>
-                          <input type="date" class="form-control"
+                          <label for="dob">Date of Birth</label>
+                          <input type="date" id="dob" class="form-control"
                           placeholder="dd/mm/yyyy" name="dob">
                         </div>
                       </div>
@@ -116,6 +120,7 @@
                         <div class="form-inline">
                           <label for="gender">Gender</label>
                           <select class="form-control" id="gender">
+                            <option disabled selected>Select</option>
                             <option>Male</option>
                             <option>Female</option>
                             <option>Other</option>
@@ -139,11 +144,98 @@
             </div>
             <div class="panel panel-default">
               <button type="button" class="btn btn-block"
-                href="#contact-detail" data-toggle="collapse"
-                data-parent="#accordion">Contact Detail</button>
-              <div class="panel-collapse collapse" id="contact-detail">
+                href="#contact" data-toggle="collapse"
+                data-parent="#accordion">Contact</button>
+              <div class="panel-collapse collapse" id="contact">
                 <div class="panel-body">
-
+                  <form action="#" method="post">
+                    <fieldset>
+                      <legend>Address</legend>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="unit" class="sr-only">Unit</label>
+                          <input type="text" id="unit" name="unit"
+                          class="form-control" placeholder="Unit">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="building-name" class="sr-only">Building Name</label>
+                          <input type="text" name="buildingname" id="building-name"
+                          class="form-control" placeholder="Building Name">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="street-number" class="sr-only">Street Number</label>
+                          <input type="text" name="streetnumber" id="street-number"
+                          class="form-control" placeholder="Street Number">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="street-name" class="sr-only">Street Name</label>
+                          <input type="text" name="streetname" id="street-name"
+                          class="form-control" placeholder="Street Name">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="neighbourhood" class="sr-only">Neighbourhood</label>
+                          <input type="text" name="neighbourhood" id="neighbourhood"
+                          class="form-control" placeholder="Neighbourhood">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="city-town" class="sr-only">City/Town</label>
+                          <input type="text" name="citytown" id="city-town"
+                          class="form-control" placeholder="City/Town">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="zip-post-code" class="sr-only">Zip/Post Code</label>
+                          <input type="text" name="zippostcode" id="zip-post-code"
+                          class="form-control" placeholder="Zip/Post Code">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="country" class="sr-only">Country</label>
+                          <input type="text" name="country" id="country"
+                          class="form-control" placeholder="Country">
+                        </div>
+                      </div>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Phone</legend>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="mobile" class="sr-only">Mobile</label>
+                          <input type="number" name="mobile" id="modile"
+                          class="form-control" placeholder="Mobile">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="land-line" class="sr-only">Land Line</label>
+                          <input type="number" name="landline" id="land-line"
+                          class="form-control" placeholder="Land Line">
+                        </div>
+                      </div>
+                    </fieldset>
+                    <div class="form-inline">
+                      <div class="form-group">
+                        <button type="submit" name="submit"
+                        class="btn btn-default">Submit</button>
+                      </div>
+                      <div class="form-group">
+                        <button type="reset" name="reset"
+                        class="btn btn-default">Reset</button>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>

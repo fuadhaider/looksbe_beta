@@ -18,8 +18,8 @@ header#flex-header {
   display: -webkit-flex;
   display: -moz-flex;
   align-items: center;
-  -webkit-items-content: center;
-  padding: 0 1vh; }
+  -webkit-align-items: center;
+  padding: 1vw 1vw; }
   header#flex-header a {
     text-decoration: none;
     color: white;
@@ -40,7 +40,8 @@ section#flex-section {
   flex: auto; }
   section#flex-section main#flex-main {
     background: whitesmoke;
-    flex: auto; }
+    flex: auto;
+    overflow: scroll; }
   section#flex-section aside#flex-aside {
     background: #c99d9d; }
   section#flex-section nav#flex-nav {
