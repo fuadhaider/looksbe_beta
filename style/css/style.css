@@ -41,7 +41,8 @@ section#flex-section {
   section#flex-section main#flex-main {
     background: whitesmoke;
     flex: auto;
-    overflow: scroll; }
+    overflow: scroll;
+    height: 0; }
   section#flex-section aside#flex-aside {
     background: #c99d9d; }
   section#flex-section nav#flex-nav {
@@ -80,7 +81,8 @@ section#flex-section {
       -moz-flex-flow: column;
       justify-content: flex-start; }
     section#flex-section main#flex-main {
-      order: 2; }
+      order: 2;
+      height: auto; }
     section#flex-section aside#flex-aside {
       order: 3; } }
 
