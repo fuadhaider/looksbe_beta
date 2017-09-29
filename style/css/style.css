@@ -19,7 +19,7 @@ header#flex-header {
   display: -moz-flex;
   align-items: center;
   -webkit-align-items: center;
-  padding: 1vw 1vw; }
+  padding: 0 2vw; }
   header#flex-header a {
     text-decoration: none;
     color: white;
@@ -37,7 +37,8 @@ section#flex-section {
   flex-flow: column;
   -webkit-flex-flow: column;
   -moz-flex-flow: column;
-  flex: auto; }
+  flex: auto;
+  height: 0; }
   section#flex-section main#flex-main {
     background: whitesmoke;
     flex: auto;

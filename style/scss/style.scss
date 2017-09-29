@@ -17,7 +17,7 @@ header#flex-header {
   @include display-flex;
   align-items: center;
   -webkit-align-items: center;
-  padding: 1vw 1vw;
+  padding: 0 2vw;
   a {
     text-decoration: none;
     color: $icon-color;
@@ -36,6 +36,7 @@ section#flex-section {
   @include display-flex;
   @include flex-flow(column);
   flex: auto;
+  height: 0;
   main#flex-main {
       background: whitesmoke;
       flex: auto;
@@ -65,6 +66,11 @@ section#flex-section {
   text-align: center;
   color: $body-font-colour;
 }
+
+// .form-control input {
+//   // font-size: 1px;
+//   // font: $body-font;
+// }
 
 // input[type="date"]::before {
 //   content: attr(placeholder);
